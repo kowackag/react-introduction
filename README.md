@@ -124,6 +124,8 @@ Postaraj się również wszystkie komponenty przetrzymywać w osobnych plikach w
 
 Pamiętaj, że webpack musi być cały czas uruchomiony, aby kod JSX mógł być transpilowany do JS, dzięki czemu będziesz widzieć efekty swojej pracy.
 
+> **Uwaga!** Nie używaj plików graficznych w tym projekcie ponieważ [konfiguracja webpacka](https://www.robinwieruch.de/webpack-images) nie została do tego przygotowana i przy probie ich wykorzystania pojawią się błędy.
+
 ## Podsumowanie
 
 To zadanie umożliwi Ci przećwiczenie budowania komponentów co jest niezbędne przy pracy z React. 
