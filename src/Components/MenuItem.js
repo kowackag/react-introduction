@@ -1,5 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const itemStyle = {
     listStyle: 'none',
@@ -14,10 +14,15 @@ const linkStyle = {
 }
 
 const MenuItem = (props) => {
-        const {url, text} = props;
-        return (
-            <li style = {itemStyle}><a href = {url} style = {linkStyle}>{text}</a></li>
-        )
+    const { url, text } = props;
+    return (
+        <li style={itemStyle}><a href={url} style={linkStyle}>{text}</a></li>
+    )
+}
+
+MenuItem.propTypes = {
+    text: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
+    url: PropTypes.string,
 }
 
 export default MenuItem;
