@@ -1,11 +1,16 @@
 import React from 'react';
 
-const title = 'Kontakt'
+const title = 'Kontakt:'
+
+const style = {
+    textTransform: 'uppercase',
+    color: '#AF2E2E',
+};
 
 const Contact = () => {
     return (
         <section>
-            <h2>{title}</h2>
+            <h2 style = {style}>{title}</h2>
             <p><strong>Wojciech Walkiewicz:</strong></p>
             <p>tel: 777 777 777</p>
             <p>mail: ww@wp.pl</p>

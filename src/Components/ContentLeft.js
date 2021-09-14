@@ -3,7 +3,10 @@ import React from 'react'
 const content = 'Wojciech Walkiewicz fotograf – urodzony w Kielcach. Absolwent Wydziału Radia i Telewizji Uniwersytetu Śląskiego w Katowicach, na kierunku operator obrazu filmowego i realizator TV oraz Policealnego Studium Fotograficznego w Warszawie. Autor zdjęć do filmów dokumentalnych, teledysków i cyklicznych programów telewizyjnych.'
 
 const style = {
-    width: '30%'
+    padding: '10px',
+    width: '25%',
+    backgroundColor: '#F6F5F5',
+    border: '2px solid black'
 }
 
 const ContentLeft = () => {

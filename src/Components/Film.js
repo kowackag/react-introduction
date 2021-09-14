@@ -27,13 +27,18 @@ const itemStyle ={
     margin: '0 20px 0 0'
 }
 
+const linkStyle = {
+    fontSize: '18px',
+    color: '#F6F5F5'
+}
+
 const Film = () => {
     return (
         <ul style= {style}> {
             filmList.map(item => {
                 const { title, url, genre, year,creator } = item;
                 return (
-                <li><a href = {url}>{title}</a>
+                <li><a href = {url} style= {linkStyle}>{title}</a>
                     <ul style= {style}>
                         <li style = {itemStyle}>{year}</li>
                         <li style = {itemStyle}>{genre}</li>
