@@ -1,10 +1,11 @@
 import React from 'react';
 import Menu from './Menu'
 
-const Nav = () => {
+const Nav = (props) => {
+    const {items} = props
     return (
         <nav>
-            <Menu/>
+             <Menu items = {items} />
         </nav>
     )
 }

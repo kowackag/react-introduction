@@ -1,11 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './Components/Header'
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import Content from './Components/Content'
 
 
-// const App = () => <h1>Hello World</h1>;
+const PagePost = () => {
+    return (
+        <>
+            <Header/>
+            <Content/>
+            <Footer/>
+        </>
+    )} 
 
 ReactDOM.render(
-    <Header />,
+    <PagePost/>,
     document.querySelector('#root')
 );

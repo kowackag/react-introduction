@@ -1,17 +1,11 @@
 import React from 'react';
 import MenuItem from './MenuItem'
 
-const MenuItems = [
-    {text: 'About me', url:'/'},
-    {text: 'Skills', url:'/'},
-    {text: 'Projects', url:'/'},
-    {text: 'Contact', url:'/'},
-]
-
-const Menu = () => {
+const Menu = (props) => {
+    const {items} = props;
     return (
         <ul> {
-            MenuItems.map(item => {
+            items.map(item => {
                 const { text, url } = item;
                 return <MenuItem text = {text} url = {url}/>
             })
