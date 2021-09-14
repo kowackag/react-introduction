@@ -3,9 +3,13 @@ import ContentLeft from './ContentLeft';
 import ContentRight from './ContentRight';
 import ContentMain from './ContentMain';
 
+const style = {
+    display: 'flex',
+}
+
 const Content = () => {
     return(
-        <main>
+        <main style = {style}>
             <ContentLeft/>
             <ContentMain/>
             <ContentRight/>

@@ -10,10 +10,19 @@ const footerItems = [
     {text: <i className="fab fa-vimeo"></i>, url:'https://vimeo.com/user18604501/videos/sort:plays/format:detail'},
 ]
 
+const style = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    fontFamily: 'Arial, sans-serif',
+    backgroundColor: '#111',
+    color: 'white'
+}
+
 class Footer extends React.Component {
     render() {
         return (
-            <footer>
+            <footer style = {style}>
                 <Copyrights text ={text}/>
                 <Menu items ={footerItems}/>
             </footer>

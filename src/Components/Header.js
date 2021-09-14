@@ -9,9 +9,19 @@ const headerItems = [
     {text: 'Kontakt', url:'/'},
 ]
 
+const myStyle = {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: '0 20px',
+    fontFamily: 'Arial, sans-serif',
+    backgroundColor: '#111',
+    color: 'white'
+}
+
 const Header = () => {
     return (
-        <header>
+        <header style = {myStyle}>
             <Logo/>
             <Nav items = {headerItems}/>
         </header>

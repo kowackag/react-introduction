@@ -7,28 +7,37 @@ const filmList = [
     {title:'Wkręceni 2', genre: 'Film dokumentalny', year: '2015', creator: 'Operator kamery', url: 'https://filmpolski.pl/fp/index.php?film=1236586'},
     {title:'Świat Józefa', genre: 'Film dokumentalny', year: '2009', creator: 'Zdjęcia', url: 'https://filmpolski.pl/fp/index.php?film=1234805'},
     {title:'Szpital odzyskanej nadzieji', genre: 'Telenowela', year: '2009', creator: 'Zdjęcia', url: 'https://filmpolski.pl/fp/index.php?film=4222919'},
-    {title:'Moje wybory (z cyklu: Sprawiedliwi)', genre: 'film dokumentalny', year: '2007', creator: 'Zdjęcia', url: 'https://filmpolski.pl/fp/index.php?film=4222182'},
-    {title:'Moja wielka rodzina (z cyklu: Sprawiedliwi)', genre: 'film dokumentalny', year: '2007', creator: 'Zdjęcia', url: 'https://filmpolski.pl/fp/index.php?film=4222351'},
-    {title:'Dzieci dwojga rodziców (z cyklu: Sprawiedliwi)', genre: 'film dokumentalny', year: '2007', creator: 'Zdjęcia', url: 'https://filmpolski.pl/fp/index.php?film=4222364'},
-    {title:'Nigdy ne poznam ich imienia (z cyklu: Sprawiedliwi)', genre: 'film dokumentalny', year: '2007', creator: 'Zdjęcia', url: 'https://filmpolski.pl/fp/index.php?film=4222530'},
-    {title:'Dom dzieci (z cyklu: Sprawiedliwi)', genre: 'film dokumentalny', year: '2007', creator: 'Zdjęcia', url: 'https://filmpolski.pl/fp/index.php?film=4222547'},
-    {title:'Nasi sąsiedzi (z cyklu: Sprawiedliwi)', genre: 'film dokumentalny', year: '2006', creator: 'Zdjęcia', url: 'https://filmpolski.pl/fp/index.php?film=4222109'},
-    {title:'Miłość była jego siłą (z cyklu: Sprawiedliwi)', genre: 'film dokumentalny', year: '2006', creator: 'Zdjęcia', url: 'https://filmpolski.pl/fp/index.php?film=4222140'},
-    {title:'Skąd przybywa Benedykt XVI?', genre: 'film dokumentalny', year: '2006', creator: 'Zdjęcia', url: 'https://filmpolski.pl/fp/index.php?film=4221121'},
+    {title:'Moje wybory (z cyklu: Sprawiedliwi)', genre: 'Film dokumentalny', year: '2007', creator: 'Zdjęcia', url: 'https://filmpolski.pl/fp/index.php?film=4222182'},
+    {title:'Moja wielka rodzina (z cyklu: Sprawiedliwi)', genre: 'Film dokumentalny', year: '2007', creator: 'Zdjęcia', url: 'https://filmpolski.pl/fp/index.php?film=4222351'},
+    {title:'Dzieci dwojga rodziców (z cyklu: Sprawiedliwi)', genre: 'Film dokumentalny', year: '2007', creator: 'Zdjęcia', url: 'https://filmpolski.pl/fp/index.php?film=4222364'},
+    {title:'Nigdy ne poznam ich imienia (z cyklu: Sprawiedliwi)', genre: 'Film dokumentalny', year: '2007', creator: 'Zdjęcia', url: 'https://filmpolski.pl/fp/index.php?film=4222530'},
+    {title:'Dom dzieci (z cyklu: Sprawiedliwi)', genre: 'Film dokumentalny', year: '2007', creator: 'Zdjęcia', url: 'https://filmpolski.pl/fp/index.php?film=4222547'},
+    {title:'Nasi sąsiedzi (z cyklu: Sprawiedliwi)', genre: 'Film dokumentalny', year: '2006', creator: 'Zdjęcia', url: 'https://filmpolski.pl/fp/index.php?film=4222109'},
+    {title:'Miłość była jego siłą (z cyklu: Sprawiedliwi)', genre: 'Film dokumentalny', year: '2006', creator: 'Zdjęcia', url: 'https://filmpolski.pl/fp/index.php?film=4222140'},
+    {title:'Skąd przybywa Benedykt XVI?', genre: 'Film dokumentalny', year: '2006', creator: 'Zdjęcia', url: 'https://filmpolski.pl/fp/index.php?film=4221121'},
     {title:'Park', genre: 'Film dokumentalny', year: '1999', creator: 'Zdjęcia, Scenariusz, Reżyseria', url: 'https://filmpolski.pl/fp/index.php?film=1255832'},
 ]
+const style = {
+    padding: '10px 0',
+    listStyle: 'none'
+}
+
+const itemStyle ={
+    display: 'inline-block', 
+    margin: '0 20px 0 0'
+}
 
 const Film = () => {
     return (
-        <ul> {
+        <ul style= {style}> {
             filmList.map(item => {
                 const { title, url, genre, year,creator } = item;
                 return (
                 <li><a href = {url}>{title}</a>
-                    <ul>
-                        <li>{year}</li>
-                        <li>{genre}</li>
-                        <li>{creator}</li>
+                    <ul style= {style}>
+                        <li style = {itemStyle}>{year}</li>
+                        <li style = {itemStyle}>{genre}</li>
+                        <li style = {itemStyle}>{creator}</li>
                     </ul>
                 </li>
                 )

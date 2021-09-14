@@ -2,7 +2,7 @@ import React from 'react';
 import Menu from './Menu'
 import Film from './Film'
 
-const title = 'Filmografia';
+const title = 'Filmografia:';
 
 const Section = () => {
     return (

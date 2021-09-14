@@ -1,20 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
-import Content from './Components/Content'
+import PagePost from './Components/PagePost'
 
-
-const PagePost = () => {
-    return (
-        <>
-            <Header/>
-            <Content/>
-            <Footer/>
-        </>
-    )} 
+const myStyle = {
+    fontFamily: 'Arial',
+    color: 'red'
+}
 
 ReactDOM.render(
-    <PagePost/>,
+    <PagePost style = {myStyle}/>,
     document.querySelector('#root')
 );
