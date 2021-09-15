@@ -1,6 +1,5 @@
 import React from 'react';
 import Section from './Section';
-// import Gallery from './Gallery';
 import Contact from './Contact';
 
 const style = {
@@ -12,11 +11,20 @@ const style = {
     color: 'white'
 }
 
-const ContentMain = () => {
+const titleStyle = {
+    textTransform: 'uppercase',
+    color: '#AF2E2E',
+};
+
+const ContentMain = (props) => {
+    const {images} = props;
     return(
         <div style ={style}>
             <Section></Section>
-            {/* <section content = {<Gallery/>}/> */}
+            <section>
+                <h2 style = {titleStyle}>Galeria</h2>
+                {images}
+            </section>
             <Contact></Contact>
         </div>
     ) 
