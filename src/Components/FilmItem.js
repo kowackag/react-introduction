@@ -13,7 +13,6 @@ const itemStyle ={
 const FilmItem = (props) => {
     const {elem} = props;
     const {genre, year,creator } = elem;
-    console.log(genre);
     return (
         <ul style= {style}>
             <li style = {itemStyle}>{year}</li>

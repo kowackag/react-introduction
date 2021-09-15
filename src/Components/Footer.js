@@ -1,13 +1,13 @@
 import React from 'react';
 import Copyrights from './Copyrights';
-import Menu from './Menu'
+import MenuIcon from './MenuIcon'
 
 const text = 'Copyrights: M. Kowacka';
 
 const footerItems = [
-    {text: <i className="fab fa-linkedin"></i>, url:'https://www.linkedin.com/in/wojciech-walkiewicz-0a166476?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBQWws%2BQyTxiR0ewCXaWauQ%3D%3D'},
-    {text: <i className="fab fa-facebook-square"></i>, url:'https://www.facebook.com/wojciech.walkiewicz.7'},
-    {text: <i className="fab fa-vimeo"></i>, url:'https://vimeo.com/user18604501/videos/sort:plays/format:detail'},
+    {text: "fa-linkedin", url:'https://www.linkedin.com/in/wojciech-walkiewicz-0a166476?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBQWws%2BQyTxiR0ewCXaWauQ%3D%3D'},
+    {text: "fa-facebook-square", url:'https://www.facebook.com/wojciech.walkiewicz.7'},
+    {text: "fa-vimeo", url:'https://vimeo.com/user18604501/videos/sort:plays/format:detail'},
 ]
 
 const style = {
@@ -19,15 +19,27 @@ const style = {
     color: 'white'
 }
 
+// class Footer extends React.Component {
+//     render() {
+//         return (   
+//             <footer style = {style}>
+//                 <Copyrights text ={text}/>
+//                 <Menu items ={footerItems}/>
+//             </footer>
+//         )
+//     }
+// }
+
 class Footer extends React.Component {
     render() {
-        return (
+        return (   
             <footer style = {style}>
                 <Copyrights text ={text}/>
-                <Menu items ={footerItems}/>
+                <MenuIcon items ={footerItems}/>
             </footer>
         )
     }
 }
+
 
 export default Footer;
